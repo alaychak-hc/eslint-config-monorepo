@@ -5,7 +5,6 @@
   "license": "MIT",
   "description": "The workspace for the ESLint config monorepo",
   "keywords": [],
-  "private": true,
   "main": "index.json",
   "type": "module",
   "repository": {
