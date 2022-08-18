@@ -11,6 +11,9 @@
     "type": "git",
     "url": "https://github.com/alaychak-hc/eslint-config-monorepo.git"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "is-ci || husky install",
