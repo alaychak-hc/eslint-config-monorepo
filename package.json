@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-monorepo",
+  "name": "@alaychak-hc/eslint-config-monorepo",
   "version": "0.0.1",
   "author": "Andrew Laychak",
   "license": "MIT",
