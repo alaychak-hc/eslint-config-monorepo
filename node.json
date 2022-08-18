@@ -1,0 +1,53 @@
+{
+  "extends": ["plugin:n/recommended"],
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "rules": {
+    "n/no-callback-literal": "error",
+    "n/exports-style": "error",
+    "n/file-extension-in-import": "error",
+    "n/prefer-global/buffer": "error",
+    "n/prefer-global/console": "error",
+    "n/prefer-global/process": "error",
+    "n/prefer-global/text-decoder": "error",
+    "n/prefer-global/text-encoder": "error",
+    "n/prefer-global/url-search-params": "error",
+    "n/prefer-global/url": "error",
+    "n/prefer-promises/dns": "error",
+    "n/prefer-promises/fs": "error",
+    "n/callback-return": "error",
+    "n/global-require": "error",
+    "n/handle-callback-err": ["error", "^.*(e|E)rror"],
+    "n/no-mixed-requires": "error",
+    "n/no-new-require": "error",
+    "n/no-path-concat": "error",
+    "n/no-process-env": "error",
+    "n/no-process-exit": "error",
+    "n/no-sync": "error"
+  },
+  "overrides": [
+    {
+      "files": ["*.cjs", ".*.cjs"],
+      "parserOptions": {
+        "ecmaVersion": "latest"
+      },
+      "rules": {
+        "unicorn/prefer-module": "off",
+        "import/no-commonjs": "off"
+      }
+    },
+    {
+      "files": ["*.mjs", ".*.mjs"],
+      "parserOptions": {
+        "ecmaVersion": "latest"
+      }
+    },
+    {
+      "files": ["*.ts"],
+      "rules": {
+        "n/file-extension-in-import": ["error", "never"]
+      }
+    }
+  ]
+}
