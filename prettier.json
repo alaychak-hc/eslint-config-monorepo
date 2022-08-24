@@ -4,6 +4,13 @@
     "arrow-body-style": "error",
     "no-tabs": "error",
     "curly": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto",
+        "parser": "html"
+      }
+    ],
     "max-len": [
       "error",
       {
@@ -17,7 +24,7 @@
     ],
     "quotes": [
       "error",
-      "double",
+      "single",
       {
         "avoidEscape": true,
         "allowTemplateLiterals": false
@@ -42,6 +49,7 @@
         "prettier/prettier": [
           "error",
           {
+            "endOfLine": "auto",
             "parser": "html"
           }
         ]

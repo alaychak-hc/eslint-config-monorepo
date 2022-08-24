@@ -1,0 +1,203 @@
+// #region Developer Information
+/*
+ ********************************************
+ *  Author: Andrew Laychak
+ *  Email: ALaychak@harriscomputer.com
+ *
+ *  Created At: 08-22-2022 12:13:30 PM
+ *  Last Modified: 08-24-2022 10:29:42 AM
+ *  Last Updated By: Andrew Laychak
+ *
+ *  Description: The base configuration file for ESLint (v8.22.0) with formatting.
+ *
+ *  References:
+ *    - None
+ ********************************************
+ */
+// #endregion
+
+// #region Config
+{
+  "extends": ["./base.json"],
+  "rules": {
+    // #region Layout & Formatting
+    "array-bracket-newline": [
+      "error",
+      {
+        "multiline": true
+      }
+    ],
+    "array-bracket-spacing": ["error", "never"],
+    "array-element-newline": [
+      "error",
+      {
+        "multiline": true
+      }
+    ],
+    "arrow-parens": "error",
+    "arrow-spacing": "error",
+    "block-spacing": "error",
+    "brace-style": "error",
+    "comma-dangle": ["error", "always-multiline"],
+    "comma-spacing": "error",
+    "comma-style": "error",
+    "computed-property-spacing": "error",
+    "dot-location": ["error", "property"],
+    "eol-last": "error",
+    "func-call-spacing": "error",
+    "generator-star-spacing": "error",
+    "implicit-arrow-linebreak": "error",
+    // "indent": [
+    //   "error",
+    //   2,
+    //   {
+    //     "ArrayExpression": "first",
+    //     "CallExpression": {
+    //       "arguments": "first"
+    //     },
+    //     "FunctionDeclaration": {
+    //       "body": 1,
+    //       "parameters": "first"
+    //     },
+    //     "FunctionExpression": {
+    //       "body": 1,
+    //       "parameters": "first"
+    //     },
+    //     "ImportDeclaration": "first",
+    //     "ObjectExpression": "first",
+    //     "SwitchCase": 1,
+    //     "VariableDeclarator": "first"
+    //   }
+    // ],
+    "key-spacing": "error",
+    "keyword-spacing": "error",
+    "line-comment-position": "error",
+    "linebreak-style": "error",
+    "lines-around-comment": "error",
+    "lines-between-class-members": "error",
+    "max-statements-per-line": "error",
+    "new-parens": ["error", "never"],
+    "newline-per-chained-call": "error",
+    "no-multi-spaces": "error",
+    "no-multiple-empty-lines": "error",
+    "no-tabs": ["error", { "allowIndentationTabs": true }],
+    "no-trailing-spaces": "error",
+    "no-whitespace-before-property": "error",
+    "nonblock-statement-body-position": ["error", "below"],
+    "object-curly-newline": "error",
+    "object-curly-spacing": ["error", "always"],
+    "object-property-newline": [
+      "error",
+      {
+        "allowAllPropertiesOnSameLine": true
+      }
+    ],
+    "operator-linebreak": "error",
+    "padded-blocks": ["error", "never"],
+    // "padding-line-between-statements": [
+    //   "error",
+    //   {
+    //     "blankLine": "always",
+    //     "next": "*",
+    //     "prev": "*"
+    //   },
+    //   {
+    //     "blankLine": "any",
+    //     "next": "expression",
+    //     "prev": "expression"
+    //   },
+    //   {
+    //     "blankLine": "always",
+    //     "next": "iife",
+    //     "prev": "iife"
+    //   },
+    //   {
+    //     "blankLine": "any",
+    //     "next": ["case"],
+    //     "prev": "*"
+    //   },
+    //   {
+    //     "blankLine": "any",
+    //     "next": "directive",
+    //     "prev": "directive"
+    //   },
+    //   {
+    //     "blankLine": "any",
+    //     "next": "const",
+    //     "prev": "const"
+    //   },
+    //   {
+    //     "blankLine": "any",
+    //     "next": "let",
+    //     "prev": "let"
+    //   },
+    //   {
+    //     "blankLine": "any",
+    //     "next": "var",
+    //     "prev": "var"
+    //   },
+    //   {
+    //     "blankLine": "any",
+    //     "next": "import",
+    //     "prev": "import"
+    //   },
+    //   {
+    //     "blankLine": "any",
+    //     "next": "export",
+    //     "prev": "export"
+    //   },
+    //   {
+    //     "blankLine": "always",
+    //     "next": ["cjs-import", "cjs-export"],
+    //     "prev": "*"
+    //   },
+    //   {
+    //     "blankLine": "always",
+    //     "next": "*",
+    //     "prev": ["cjs-import", "cjs-export"]
+    //   },
+    //   {
+    //     "blankLine": "any",
+    //     "next": "cjs-import",
+    //     "prev": "cjs-import"
+    //   },
+    //   {
+    //     "blankLine": "any",
+    //     "next": "cjs-export",
+    //     "prev": "cjs-export"
+    //   }
+    // ],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": false
+      }
+    ],
+    "rest-spread-spacing": "error",
+    "semi": "error",
+    "semi-spacing": "error",
+    "semi-style": "error",
+    "space-before-blocks": "error",
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "always",
+        "asyncArrow": "always",
+        "named": "never"
+      }
+    ],
+    "space-in-parens": "error",
+    "space-infix-ops": ["error", { "int32Hint": true }],
+    "space-unary-ops": "error",
+    "switch-colon-spacing": "error",
+    "template-curly-spacing": "error",
+    "template-tag-spacing": "error",
+    "unicode-bom": "error",
+    "wrap-iife": ["error", "inside"],
+    "yield-star-spacing": ["error", "before"]
+    // #endregion
+  }
+}
+// #endregion

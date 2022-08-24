@@ -50,27 +50,27 @@
         "allowNullish": false
       }
     ],
-    "@typescript-eslint/naming-convention": [
-      "error",
-      {
-        "selector": "default",
-        "format": ["strictCamelCase"]
-      },
-      {
-        "selector": "function",
-        "format": ["strictCamelCase", "StrictPascalCase"]
-      },
-      {
-        "selector": ["typeLike", "enumMember"],
-        "format": ["StrictPascalCase"]
-      },
-      {
-        "selector": ["variable", "parameter", "property", "accessor"],
-        "types": ["boolean"],
-        "format": ["PascalCase"],
-        "prefix": ["is", "has", "are", "can", "should", "did", "will"]
-      }
-    ],
+    // "@typescript-eslint/naming-convention": [
+    //   "error",
+    //   {
+    //     "selector": "default",
+    //     "format": ["strictCamelCase"]
+    //   },
+    //   {
+    //     "selector": "function",
+    //     "format": ["strictCamelCase", "StrictPascalCase"]
+    //   },
+    //   {
+    //     "selector": ["typeLike", "enumMember"],
+    //     "format": ["StrictPascalCase"]
+    //   },
+    //   {
+    //     "selector": ["variable", "parameter", "property", "accessor"],
+    //     "types": ["boolean"],
+    //     "format": ["PascalCase"],
+    //     "prefix": ["is", "has", "are", "can", "should", "did", "will"]
+    //   }
+    // ],
     "sort-class-members/sort-class-members": [
       "error",
       {

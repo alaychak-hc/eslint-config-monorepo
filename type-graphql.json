@@ -1,0 +1,26 @@
+// #region Developer Information
+/*
+ ********************************************
+  Author: Andrew Laychak
+  Email: ALaychak@harriscomputer.com
+  
+  Created At: 08-24-2022 04:29:18 PM
+  Last Modified: 08-24-2022 04:31:46 PM
+  Last Updated By: Andrew Laychak
+  
+  Description: The ESLint config for Type-GraphQL.
+  
+  References:
+    - https://github.com/borremosch/eslint-plugin-type-graphql
+ ********************************************
+*/
+// #endregion
+
+// #region ESLint Configuration for Type-GraphQL Projects
+{
+  "plugins": ["type-graphql"],
+  "rules": {
+    "type-graphql/invalid-decorated-type": "error"
+  }
+}
+// #endregion
